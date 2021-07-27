@@ -1,0 +1,118 @@
+/*
+ * Globals
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,i,em{margin: 0;padding: 0;border: 0;outline: 0;list-style: none;text-decoration: none;font-style: normal;font-weight: normal;vertical-align: middle;}
+::after, ::before {box-sizing: inherit;}
+.clear{clear: both;}
+
+a:active,a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-image: url('../../../img/bg-mobile.png');
+    margin: 0 auto;
+    width: 640px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #041431;
+    overflow: hidden;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container{
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+.wapper {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.top {
+    text-align: center;
+    margin: 15px 0 10px 0;
+    width: 100%;
+}
+.top img {
+    margin: 0 0 20px 0;
+    width: 50%;
+}
+.top h1 {
+    font-size: 26px; 
+    padding: 0 0 10px 0;
+    color: white;
+}
+    .top h2 {
+        font-size: 30px;
+        color: #00AEFE;
+        font-weight: 700;
+    }
+
+
+.help-top {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #00AEFE;
+    font-size: 30px;
+    margin-top: -2%;
+}
+
+.help {margin: 20px 0 0 0;}
+    .help li {
+        display: block;
+        background-color: #0B0726;
+        border-radius: 20px;
+        border: 1px #D0C8DB solid;
+        padding: 10px 25px;
+        margin: 5px 0;
+        text-align: left;
+    }
+    .help h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #f8bf38;
+        padding: 0 0 5px 0;
+    }
+.help li p {color: #f00;}
+
+.sub-help {margin: 0;}
+.sub-help li {
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 0;
+    border: none; 
+    padding: 2px 0 0 0; 
+    margin: 0;
+    display: list-item;
+    padding-left: 0;
+    font-weight: 500;
+    color: white
+}
+
+
+
+
+
+
+
+
+
