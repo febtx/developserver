@@ -129,6 +129,7 @@ let TopHu = function(){
 				delete obj._id;
 				return obj;
 			});
+			let taixiujs = Helpers.getConfig('sys');
 			let temp_data = {TopHu:{
 				mini_poker: result.filter(function(mini_poker){
 					return (mini_poker.game === 'minipoker')
@@ -156,7 +157,8 @@ let TopHu = function(){
 				}),
 				megaj: result.filter(function(megaj){
 					return (megaj.game === 'megaj')
-				})
+				}),
+				socialnetwork: taixiujs
 			}};
 			io.broadcast(temp_data);
 		}

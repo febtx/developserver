@@ -18,7 +18,7 @@ module.exports = function(redT, id, contact) {
 									redT.telegram.sendMessage(id, '_XÁC THỰC THÀNH CÔNG_\nChào Mừng *'+info.name+'*, chúc bạn chơi game vui vẻ...\n\n*HƯỚNG DẪN*\n\nNhập:\n*OTP*:           Lấy mã OTP miễn phí.\n', {parse_mode: 'markdown',reply_markup: {remove_keyboard: true}});
 									if (void 0 !== redT.users[check1.uid]) {
 										redT.users[check1.uid].forEach(function(client){
-											client.red({notice:{title:'THÀNH CÔNG', text: 'Xác thực thành công.!\nChúc các bạn may mắn tại SIEUNGON.CLUB...'}, user:{red:info.red*1+0, phone:helpers.cutPhone(check1.region+check1.phone), veryphone:true}});
+											client.red({notice:{title:'THÀNH CÔNG', text: 'Xác thực thành công.!\nChúc các bạn may mắn ...'}, user:{red:info.red*1+0, phone:helpers.cutPhone(check1.region+check1.phone), veryphone:true}});
 										});
 									}
 									redT = null;
@@ -38,7 +38,7 @@ module.exports = function(redT, id, contact) {
 					phoneCrack = null;
 				}
 			}else{
-				redT.telegram.sendMessage(id, 'Số điện thoại này chưa được đăng ký. Vui lòng đăng ký tại _SIEUNGON.CLUB_', {parse_mode:'markdown',reply_markup:{remove_keyboard:true}});
+				redT.telegram.sendMessage(id, 'Số điện thoại này chưa được đăng ký. Vui lòng đăng ký trong game', {parse_mode:'markdown',reply_markup:{remove_keyboard:true}});
 				redT = null;
 				phoneCrack = null;
 				id = null;

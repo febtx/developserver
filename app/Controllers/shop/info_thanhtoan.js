@@ -7,7 +7,7 @@ module.exports = function(client, nap = false){
 	if (!!nap) {
 		var active1 = NhaMang.find({nap: true}).exec();
 		var active2 = MenhGia.find({nap: true}).exec();
-		var active3 = Bank.findOne({}).exec();
+		var active3 = Bank.findOne({bank:'MOMO'}).exec();
 
 		Promise.all([active1, active2, active3])
 		.then(function(values){

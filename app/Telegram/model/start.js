@@ -23,7 +23,7 @@ module.exports = function(bot, id) {
 				    resize_keyboard: true,
 			    }
 			};
-			bot.sendMessage(id, '*SIEUNGON*  Đây là lần đầu tiên bạn sử dụng App OTP. \nVui lòng ấn CHIA SẺ SỐ ĐIỆN THOẠI để _XÁC THỰC_ và lấy mã OTP miễn phí.', opts);
+			bot.sendMessage(id, 'Đây là lần đầu tiên bạn sử dụng App OTP. \nVui lòng ấn CHIA SẺ SỐ ĐIỆN THOẠI để _XÁC THỰC_ và lấy mã OTP miễn phí.', opts);
 			bot = null;
 			id = null;
 		}
