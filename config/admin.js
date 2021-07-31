@@ -84,6 +84,25 @@ HU.findOne({game:'vuongquocred', type:10000, red: true}, {}, function(err, data)
 	}
 })
 
+// thiết lập Hũ Audition
+HU.findOne({game:'audition', type:100, red: true}, {}, function(err, data){
+	if (!data) {
+		HU.create({'game':'audition', 'type': 100, red: true, 'bet': 500000, 'min': 500000});
+	}
+})
+
+HU.findOne({game:'audition', type:1000, red: true}, {}, function(err, data){
+	if (!data) {
+		HU.create({'game':'audition', 'type': 1000, red: true, 'bet': 5000000, 'min': 5000000});
+	}
+})
+
+HU.findOne({game:'audition', type:10000, red: true}, {}, function(err, data){
+	if (!data) {
+		HU.create({'game':'audition', 'type': 10000, red: true, 'bet': 50000000, 'min': 50000000});
+	}
+})
+
 
 // thiết lập Hũ Mini 3Cây
 HU.findOne({game:'mini3cay', type:100, red: true}, {}, function(err, data){

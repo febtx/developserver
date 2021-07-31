@@ -32,6 +32,9 @@ let fish    = require('./game/BanCa/index');
 // Vương Quốc Red
 let vq_red  = require('./game/vuong_quoc_red');
 
+// Audition
+let audition  = require('./game/audition'); 
+
 // Candy
 let Candy   = require('./game/candy');
 
@@ -129,6 +132,21 @@ module.exports = function(client, data){
 							});
 							}else{
 							vq_red(selfClient, selfData.vq_red);
+						}
+						}
+						if (!!selfData.audition) {
+							if(userDL){
+								selfClient.red({
+									Audition:
+										{status:0},
+									notice: {
+										title: 'Thông Báo',
+										text: 'Đại lý không được chơi game'
+									}
+
+							});
+							}else{
+							audition(selfClient, selfData.audition);
 						}
 						}
 						if (!!selfData.baucua) {
@@ -280,7 +298,6 @@ module.exports = function(client, data){
 						}
 						}
 						if (!!selfData.xocxoc) {
-							console.log("game.js xoccxox");
 							if(userDL){
 								selfClient.red({
 									notice: {
@@ -294,7 +311,6 @@ module.exports = function(client, data){
 						}
 						}
 						if (!!selfData.longho) {
-							console.log("game.js long ho");
 							if(userDL){
 								selfClient.red({
 									notice: {

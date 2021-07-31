@@ -4,7 +4,7 @@ module.exports = {
 	'options': {
 		//'user':   'kvcpro',
 		//'pass':   'Minhhoang2009@',
-		'dbName': 'longho', // red
+		'dbName': 'audition', // red
 		'useNewUrlParser': true,
 		'useUnifiedTopology': true,
 		//'autoIndex':       false,

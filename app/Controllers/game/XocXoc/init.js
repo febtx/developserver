@@ -305,7 +305,7 @@ XocXoc.prototype.thanhtoan = function(dice = null){
 			}
 		}.bind(this));
 	}else{
-		
+	if(global.dataListBootxocxoc.length != 0){
 	if(global.flagBootxocxoc){
 			for(let i =0 ; i< 8 ;i++){
 				let index=(Math.random()*global.dataListBootxocxoc.length-1)>>0;
@@ -438,6 +438,7 @@ XocXoc.prototype.thanhtoan = function(dice = null){
 					}
 			}.bind(this), 1500);
 			}
+		}
 		}
 		this.data.databotxocxoc=global.maxdataBootxocxoc;				  
 		Object.values(this.clients).forEach(function(client){

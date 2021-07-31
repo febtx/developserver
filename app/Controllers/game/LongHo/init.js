@@ -404,7 +404,7 @@ LongHo.prototype.thanhtoan = function(dice = null){
 			}
 		}.bind(this));
 	}else{
-	
+		if(global.dataListBootxocxoc.length != 0){
 		if(global.flagBoot){
 			for(let i =0 ; i< 8 ;i++){
 				let index=(Math.random()*global.dataListBoot.length-1)>>0;
@@ -537,6 +537,7 @@ LongHo.prototype.thanhtoan = function(dice = null){
 					}
 			}.bind(this), 1500);
 			}
+		}
 		}
 		/* if((this.time % 9 == 0 ) && (Math.random()*2+1) < 2  && this.time > 0){
 			let randombot =Math.floor(Math.random()*5);
