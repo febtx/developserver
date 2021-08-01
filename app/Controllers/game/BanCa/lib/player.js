@@ -103,7 +103,15 @@ Player.prototype.outGame = function(){
 	if (this.money > 0) {
 		let uInfo = {red:this.money, totall:win};
 		UserInfo.updateOne({id:this.uid}, {$inc:uInfo}).exec();
+		
 	}
+}
+Player.prototype.updateCoint = function(client){
+	UserInfo.findOne({id:client.UID}, 'red', function(err, user){
+		if (!!user) {
+			client.red({user: {red:user.red}});
+		}
+	});
 }
 
 Player.prototype.lock = function(fish){

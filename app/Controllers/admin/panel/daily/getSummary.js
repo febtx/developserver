@@ -71,12 +71,12 @@ module.exports = function(req, res) {
             var withdrawalBank = 0;
             if (depositBankData) {
                 depositBankData.map(function(item, index) {
-                    depositBank += item.money;
+                    depositBank += parseInt(item.money);
                 });
             }
             if (withdrawalBankData) {
                 withdrawalBankData.map(function(item, index) {
-                    withdrawalBank += item.money;
+                    withdrawalBank += parseInt(item.money);
                 });
             }
             var dlList = all[6];

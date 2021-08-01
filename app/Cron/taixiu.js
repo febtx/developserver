@@ -140,6 +140,9 @@ let TopHu = function(){
 				vq_red: result.filter(function(vq_red){
 					return (vq_red.game === 'vuongquocred')
 				}),
+				audition: result.filter(function(audition){
+					return (audition.game === 'audition')
+				}),
 				caothap: result.filter(function(caothap){
 					return (caothap.game === 'caothap')
 				}),
