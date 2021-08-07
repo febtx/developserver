@@ -8,6 +8,8 @@ let tamhung    = require('./bot_hu/tamhung');
 //let mini3cay   = require('./bot_hu/mini3cay');
 //let minipoker  = require('./bot_hu/minipoker');
 let vqred      = require('./bot_hu/vqred');
+let audition      = require('./bot_hu/audition');
+let lankwaifong      = require('./bot_hu/lankwaifong');
 
 module.exports = function(io, listBot){
 /* 	setTimeout(() =>{
@@ -29,6 +31,14 @@ module.exports = function(io, listBot){
 
 	setTimeout(() =>{
 		vqred(io, listBot);
+	}, 200000);
+	
+	setTimeout(() =>{
+		audition(io, listBot);
+	}, 200000);
+	
+	setTimeout(() =>{
+		lankwaifong(io, listBot);
 	}, 200000);
 
 	setTimeout(() =>{

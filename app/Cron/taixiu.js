@@ -143,6 +143,9 @@ let TopHu = function(){
 				audition: result.filter(function(audition){
 					return (audition.game === 'audition')
 				}),
+				lankwaifong: result.filter(function(lankwaifong){
+					return (lankwaifong.game === 'lankwaifong')
+				}),
 				caothap: result.filter(function(caothap){
 					return (caothap.game === 'caothap')
 				}),

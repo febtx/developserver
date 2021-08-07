@@ -10,6 +10,8 @@ let BauCua       = require('./game/baucua');
 let MiniPoker    = require('./game/mini_poker');
 let BigBabol     = require('./game/big_babol');
 let VuongQuocRed = require('./game/vq_red');
+let Audition = require('./game/audition');
+let LanKwaiFong = require('./game/lankwaifong');
 let mini3cay     = require('./game/mini3cay');
 let angrybirds   = require('./game/angrybirds');
 let XocXoc       = require('./game/xocxoc');
@@ -41,6 +43,12 @@ module.exports = function(client, data) {
 		}
 		if (!!data.vq_red) {
 			VuongQuocRed(client, data.vq_red)
+		}
+		if (!!data.audition) {
+			Audition(client, data.audition)
+		}
+		if (!!data.lankwaifong) {
+			LanKwaiFong(client, data.lankwaifong)
 		}
 		if (!!data.mini3cay) {
 			mini3cay(client, data.mini3cay)

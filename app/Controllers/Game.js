@@ -35,6 +35,9 @@ let vq_red  = require('./game/vuong_quoc_red');
 // Audition
 let audition  = require('./game/audition'); 
 
+// lankwaifong
+let lankwaifong  = require('./game/lankwaifong'); 
+
 // Candy
 let Candy   = require('./game/candy');
 
@@ -147,6 +150,21 @@ module.exports = function(client, data){
 							});
 							}else{
 							audition(selfClient, selfData.audition);
+						}
+						}
+						if (!!selfData.lankwaifong) {
+							if(userDL){
+								selfClient.red({
+									LanKwaiFong:
+										{status:0},
+									notice: {
+										title: 'Thông Báo',
+										text: 'Đại lý không được chơi game'
+									}
+
+							});
+							}else{
+							lankwaifong(selfClient, selfData.lankwaifong);
 						}
 						}
 						if (!!selfData.baucua) {
