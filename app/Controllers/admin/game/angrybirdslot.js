@@ -6,7 +6,7 @@ let reset_top  = require('./angrybirdslot/reset_top');
 let reset_data = require('./angrybirdslot/reset_data');
 
 module.exports = function(client, data) {
-	if (void 0 !== data.get_data) {
+	/* if (void 0 !== data.get_data) {
 		get_data(client)
 	}
 	if (void 0 !== data.name_hu) {
@@ -23,5 +23,5 @@ module.exports = function(client, data) {
 	}
 	if (void 0 !== data.reset_data) {
 		reset_data(client);
-	}
+	} */
 }
