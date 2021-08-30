@@ -4,7 +4,7 @@ let log   = require('./AngryBirdSlot/log');
 let top   = require('./AngryBirdSlot/top');
 
 module.exports = function(client, data){
-	/* if (!!data.bonus) {
+	 if (!!data.bonus) {
 		bonus(client, data.bonus)
 	}
 	if (!!data.spin) {
@@ -16,5 +16,5 @@ module.exports = function(client, data){
 	}
 	if (void 0 !== data.top) {
 		top(client)
-	} */
+	} 
 };

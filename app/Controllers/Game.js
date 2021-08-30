@@ -54,7 +54,7 @@ let LongLan = require('./game/longlan');
 let Zeus = require('./game/zeus');
 
 //AngryBirdSlot
-let AngryBirdSlot = require('./game/angrybirdslot');
+let AngryBirdSlot = require('./game/AngryBirdSlot');
 
 //Lấy thông tin đại lý
 let UserInfo = require('../Models/UserInfo');
