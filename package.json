@@ -19,6 +19,7 @@
 		"ejs": "^2.7.1",
 		"excel4node": "^1.7.2",
 		"express": "^4.17.1",
+		"express-device": "^0.4.2",
 		"express-ws": "^4.0.0",
 		"is-mobile": "^2.1.0",
 		"jsdom": "^16.4.0",
@@ -35,7 +36,8 @@
 		"shortid": "^2.2.15",
 		"svg-captcha": "^1.4.0",
 		"svg2img": "^0.6.1",
-		"validator": "^11.1.0"
+		"validator": "^11.1.0",
+		"voucher-code-generator": "^1.1.1"
 	},
 	"devDependencies": {
 		"bufferutil": "^4.0.1",

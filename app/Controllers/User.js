@@ -19,6 +19,7 @@ let AngryBirds_user = require('../Models/AngryBirds/AngryBirds_user');
 let Candy_user      = require('../Models/Candy/Candy_user');
 let LongLan_user    = require('../Models/LongLan/LongLan_user');
 let Zeus_user       = require('../Models/Zeus/Zeus_user');
+let AngryBirdSlot_user  = require('../Models/AngryBirdSlot/AngryBirdSlot_user');
 let XocXoc_user     = require('../Models/XocXoc/XocXoc_user');
 let LongHo_user     = require('../Models/LongHo/LongHo_user');
 let MegaJP_user     = require('../Models/MegaJP/MegaJP_user');
@@ -183,6 +184,7 @@ let signName = function(client, name){
 												AngryBirds_user.create({'uid': client.UID});
 												Candy_user.create({'uid': client.UID});
 												LongLan_user.create({'uid': client.UID});
+												AngryBirdSlot_user.create({'uid': client.UID});
 												Zeus_user.create({'uid': client.UID});
 												XocXoc_user.create({'uid': client.UID});
 												LongHo_user.create({'uid': client.UID});

@@ -202,7 +202,7 @@ LongHo.prototype.play = function(){
 				if (!!xocxoc_config && xocxoc_config.bot && !!this.io.listBot && this.io.listBot.length > 0) {
 					// lấy danh sách tài khoản bot
 					this.botList = [...this.io.listBot];
-					let maxBot = (this.botList.length*(Math.floor(Math.random()*(70-50+1))+50)/100)>>0;
+					let maxBot = (this.botList.length*(Math.floor(Math.random()*(70-50+1))+25)/100)>>0;
 					this.botList = Helpers.shuffle(this.botList);
 					this.botList = this.botList.slice(0, maxBot);
 					this.botCount = this.botList.length;
@@ -220,7 +220,7 @@ LongHo.prototype.play = function(){
 				///**
 				
 				if (!!this.botList.length && this.time > 8) {
-					let userCuoc = (Math.random()*18)>>0;
+					let userCuoc = (Math.random()*5)>>0;
 					for (let i = 0; i < userCuoc; i++) {
 						let dataT = this.botList[i];
 						if (!!dataT) {

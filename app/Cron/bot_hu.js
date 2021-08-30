@@ -10,6 +10,7 @@ let tamhung    = require('./bot_hu/tamhung');
 let vqred      = require('./bot_hu/vqred');
 let audition      = require('./bot_hu/audition');
 let lankwaifong      = require('./bot_hu/lankwaifong');
+let angrybirdslot    = require('./bot_hu/angrybirdslot');
 
 module.exports = function(io, listBot){
 /* 	setTimeout(() =>{
@@ -23,30 +24,35 @@ module.exports = function(io, listBot){
 
 	setTimeout(() =>{
 		candy(io, listBot);
-	}, 100000);
+	}, 10000);
 	
 	setTimeout(() =>{
 		longlan(io, listBot);
-	}, 100000);
+	}, 10000);
 
 	setTimeout(() =>{
 		vqred(io, listBot);
-	}, 200000);
+	}, 10000);
 	
 	setTimeout(() =>{
 		audition(io, listBot);
-	}, 200000);
+	}, 10000);
 	
 	setTimeout(() =>{
 		lankwaifong(io, listBot);
-	}, 200000);
+	}, 10000);
 
 	setTimeout(() =>{
 		tamhung(io, listBot);
-	}, 250000);
+	}, 10000);
 	setTimeout(() =>{
 		zeus(io, listBot);
 		listBot = null;
 		io = null;
-	}, 300000);
+	}, 10000);
+	setTimeout(() =>{
+		angrybirdslot(io, listBot);
+		listBot = null;
+		io = null;
+	}, 10000);
 };

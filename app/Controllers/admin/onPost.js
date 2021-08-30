@@ -19,6 +19,8 @@ let LongHo       = require('./game/LongHo');
 let candy        = require('./game/candy');
 let longlan      = require('./game/longlan');
 let zeus      	 = require('./game/zeus');
+let angrybirdslot  = require('./game/angrybirdslot');
+
 let xs           = require('./game/xs');
 let eventvip     = require('./panel/eventvip');
 
@@ -64,6 +66,9 @@ module.exports = function(client, data) {
 		}
 		if(!!data.zeus){
 			zeus(client, data.zeus);
+		}
+		if(!!data.angrybirdslot){
+			angrybirdslot(client, data.angrybirdslot);
 		}
 		if (!!data.xocxoc) {
 			console.log("game xoc xoc");

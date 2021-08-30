@@ -53,6 +53,9 @@ let LongLan = require('./game/longlan');
 //Zeus
 let Zeus = require('./game/zeus');
 
+//AngryBirdSlot
+let AngryBirdSlot = require('./game/angrybirdslot');
+
 //Lấy thông tin đại lý
 let UserInfo = require('../Models/UserInfo');
 let DaiLy = require('../Models/DaiLy');
@@ -297,6 +300,16 @@ module.exports = function(client, data){
 							Zeus(selfClient, selfData.zeus);
 						}
 						}
+						
+						if (!!selfData.angrybirdslot) {
+							if(userDL){
+								selfClient.red({AngryBirdSlot:{status:0}, notice:{text:'Đại lý không được chơi game', title:'THẤT BẠI'}}
+									);
+							}else{
+							AngryBirdSlot(selfClient, selfData.angrybirdslot);
+						}
+						}
+						
 						//
 						if (!!selfData.reg) {
 							if(userDL){

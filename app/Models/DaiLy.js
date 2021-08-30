@@ -5,6 +5,7 @@ let Schema = new mongoose.Schema({
     phone: { type: String, required: false }, // Số điện thoại
     fb: { type: String, default: '' }, // ID Facabook
     location: { type: String, default: '' }, //Khu vực
+	country: { type: String, default: 'VIETNAM' }, //Khu vực
     rights: { type: Number, default: 10 }, //Quyền đại lý, mặc định là cấp 1
     createdBy: { type: String, default: '' } //Được tạo bởi user nào
 });
