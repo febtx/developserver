@@ -23,7 +23,7 @@ module.exports = function() {
 			console.log("------------------START CREATE BOOT GAME-------------------");
 			flag=false;
 			var lineReader = require('readline').createInterface({
-				input: require('fs').createReadStream('./data/nameboot1.txt')
+				input: require('fs').createReadStream('./data/nameboot.txt')
 				  });
 				  lineReader.on('line', function (line) {
 						console.log("bat dau tao bot si name =  "+line);
