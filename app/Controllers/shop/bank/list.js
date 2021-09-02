@@ -6,9 +6,6 @@ module.exports = function(client){
 		if (list.length > 0) {
 			list = list.map(function(obj){
 				obj = obj._doc;
-				if (obj.bank == 'MOMO') {
-					continue;
-				}
 				delete obj._id;
 				delete obj.__v;
 				return obj;
