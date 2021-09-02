@@ -129,7 +129,7 @@ let TopHu = function(){
 				delete obj._id;
 				return obj;
 			});
-			let taixiujs = Helpers.getConfig('sys');
+			let configSystem = Helpers.getConfig('sys');
 			let temp_data = {TopHu:{
 				mini_poker: result.filter(function(mini_poker){
 					return (mini_poker.game === 'minipoker')
@@ -139,6 +139,15 @@ let TopHu = function(){
 				}),
 				vq_red: result.filter(function(vq_red){
 					return (vq_red.game === 'vuongquocred')
+				}),
+				audition: result.filter(function(audition){
+					return (audition.game === 'audition')
+				}),
+				lankwaifong: result.filter(function(lankwaifong){
+					return (lankwaifong.game === 'lankwaifong')
+				}),
+				angrybirdslot: result.filter(function(angrybirdslot){
+					return (angrybirdslot.game === 'AngryBirdSlot')
 				}),
 				caothap: result.filter(function(caothap){
 					return (caothap.game === 'caothap')
@@ -158,7 +167,7 @@ let TopHu = function(){
 				megaj: result.filter(function(megaj){
 					return (megaj.game === 'megaj')
 				}),
-				socialnetwork: taixiujs
+				socialnetwork: configSystem
 			}};
 			io.broadcast(temp_data);
 		}
@@ -567,11 +576,9 @@ let playGame = function(){
 					botList = [...io.listBot];
 					
 					let maxBot = (botList.length*90/100)>>0;
-					let maxBottem = (botTemp.length*10/100)>>0;
 					botList = Helpers.shuffle(botList); // tráo
 					botList = botList.slice(0, maxBot);
-					botTemp = botTemp.slice(0, maxBottem);
-					//botListChat = botTemp;
+					botListChat = botTemp;
 					maxBot = null;
 				}else{
 					botTemp = [];
