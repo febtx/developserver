@@ -51,6 +51,7 @@ require('./routerSocket')(app, redT); // load các routes WebSocket
 require('./app/Cron/taixiu')(redT);   // Chạy game Tài Xỉu
 require('./app/Cron/baucua')(redT);   // Chạy game Bầu Cua
 require('./config/cron')();
+require('./config/croncleardata')();
 require('./config/cronxs')(); /// cron xổ số mienf bắc 
 require('./config/croncheckuseronline')(redT); // count checkout online
 require('./app/Telegram/Telegram')(redT); // Telegram Bot
